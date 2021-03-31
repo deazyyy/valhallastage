@@ -529,6 +529,10 @@ header.header {
             margin-bottom: 2rem;
             &.sell-v-cash-section {
                 background-color: #000000;
+                background-image: url(../assets/img/dappbg.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
             }
             &.transform-v-cash-section {
                 background-color: #1e3253;
@@ -647,7 +651,13 @@ header.header {
         .container {
             background: #FFFFFF17;
         }
-
+        
+        .logsecbg{
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            height: 100%;
+        }
         .v-cash-section {
             background-color: #000000;
 
@@ -659,6 +669,19 @@ header.header {
         .wallet-section {
             .wallet-card {
                 background-color: #000000;
+                position: relative;
+                .row{
+                    position: relative;
+                }
+            }
+            .card-background {
+                position: absolute;
+                height: 50% !important;
+                top: -0% !important;
+                right: -0% !important;
+                transform: rotate(0deg) !important;
+                opacity: 1 !important;
+                width: auto !important;
             }
         }
 
@@ -674,6 +697,12 @@ header.header {
 
         .log-section {
             background-color: #000000;
+            //     background-image: url(../assets/img/logobg.png);
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            //     background-position: right;
+            overflow: hidden;
+            position: relative;
             .log-section-rw{
                 display: flex;
                 justify-content: space-between;

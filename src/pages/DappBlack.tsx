@@ -6,6 +6,10 @@ import BondImage2 from "../assets/img/bond2.png";
 import VCashCoin from "../assets/img/v-cash-coin.png";
 import CoinIcon from "../assets/img/coin-icon.png";
 import arrow from "../assets/img/arrow.png";
+import bondblk1 from "../assets/img/blkdp1.png";
+import bondblk2 from "../assets/img/blkdp2.png";
+import logbg from "../assets/img/logobg.png";
+
 const DappBlack: React.FC = () => {
     return (
         <div className="dapp dapp-black">
@@ -63,11 +67,10 @@ const DappBlack: React.FC = () => {
                                                 <img src={BondImage1} alt="" />
                                                 <small className="my-2 d-block">Product</small>
                                             </div>
-                                        </div>
-                                        <div className="col-6">
-                                            <img src={BondImage1} alt="" className="card-background" />
-                                        </div>
+                                        </div>  
+                                        
                                     </div>
+                                    <img src={bondblk1} alt="" className="card-background" />
                                     <div className="row">
                                         <div className="col">
                                             <div className="coin-value-bar">
@@ -85,6 +88,7 @@ const DappBlack: React.FC = () => {
                             </div>
                             <div className="col-md-6">
                                 <div className="wallet-card">
+                                    <img src={bondblk2} alt="" className="card-background" />
                                     <div className="row">
                                         <div className="col-6">
                                             <div className="wallet-card-info">
@@ -95,9 +99,8 @@ const DappBlack: React.FC = () => {
                                                 <small className="my-2 d-block">Contains</small>
                                             </div>
                                         </div>
-                                        <div className="col-6">
-                                            <img src={BondImage2} alt="" className="card-background" />
-                                        </div>
+            
+                                        
                                     </div>
                                     <div className="row">
                                         <div className="col">
@@ -142,7 +145,8 @@ const DappBlack: React.FC = () => {
                             </button>
                         </div>
                     </section>
-                    <section className="log-section">                        
+                    <section className="log-section">      
+                        <img src={logbg} alt="" className="logsecbg"/>                  
                         <p className="text-white">Bondholders <strong>Leaderboard</strong></p>
                         <div className="log-section-outer">
                             <div className="log-section-rw text-white mb-1"><div>1. 0xCA1F0623DeC82594a124e20024aFCC7F78B4A56f</div> <div>owns</div> <div><strong>356</strong></div> <div>V-Bonds & earns</div> <div><strong>14.375</strong></div> <div>V-Cash per hour</div></div>
