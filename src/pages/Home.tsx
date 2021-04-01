@@ -22,7 +22,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <Container fluid>
-        <Row className="justify-content-md-left">
+        <Row className="justify-content-md-left wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
             <div className="logo w-100">
               <div className="container pt-5">
                 <img src={Logo} alt="BNB" />
@@ -41,8 +41,8 @@ const Home: React.FC = () => {
               </div>
             </div>
         </Row>
-        <Row>
-          <div className="service-Outersec">
+        <Row >
+          <div className="service-Outersec wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.20s">
             <div className="service-section">
               <div className="section-title">
                 <div className="container">
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
               </div>
               <div className="service-container container">
                 <div className="row">
-                  <div className="col-md-6 mb-2">
+                  <div className="col-md-6 mb-2 wow fadeInLeft " data-wow-duration="1.6s" data-wow-delay="0.20s">
                     <div className="service-item text-center">
                       <img src={ServiceImage1} alt="Service1" />
                       <h5 className="mt-5 mb-3">Earn BNB by holding V-Bonds</h5>
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                       <p>(example: 24 V-Bond will produce 24 V-Cash per day)</p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 wow fadeInRight" data-wow-duration="1.6s" data-wow-delay="0.20s">
                     <div className="service-item text-center">
                       <img src={ServiceImage2} alt="Service1" />
                       <h5 className="mt-5 mb-3">Compound or Sell your V-Cash</h5>
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                 
               </div>
             </div>
-            <div className="question-section">
+            <div className="question-section wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
               <div className="question-container container">         
                 <div className="row">
                   <div className="col-md-12">
@@ -92,19 +92,19 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-4 mb-2">
+                    <div className="col-md-4 mb-2 wow fadeInLeft" data-wow-duration="1.6s" data-wow-delay="0.20s">
                       <div className="question-card">
                         <h5>Sustainable?</h5>
                         <p>The Valhalla.finance smart contract market automatically inflates as users interact with it, which maintains contract balance and prevents  buyers from profiting much more than late buyers.</p>
                       </div>
                     </div>
-                    <div className="col-md-4 mb-2">
+                    <div className="col-md-4 mb-2 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.20s">
                       <div className="question-card">
                         <h5>Semi Closed Circuit?</h5>
                         <p>V-Bonds can’t be sold and V-Cash can only be sold back to the contract for BNB and not on the open market. That allows the contract to work without the influence of market fluctuations.</p>
                       </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 wow fadeInRight" data-wow-duration="1.6s" data-wow-delay="0.20s">
                       <div className="question-card">
                         <h5>Future Development?</h5>
                         <p>This contract is only the first brick of a much larger Dapp ecosystem. Valhalla.finance will launch a token on BSC in a near future so keep in touch with us on social networks!</p>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
             
 
 
-            <div className="question-section stable-coin">
+            <div className="question-section stable-coin wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
               <div className="section-title">
                 <div className="container">
                   <h3>
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               </div>
             </div>
       
-          <div className="about-section">
+          <div className="about-section wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.80s">
             <div className="section-title">
               <div className="container">
                 <h3>
@@ -196,7 +196,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div  className="footOuter">
+          <div  className="footOuter wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.20s">
             <div className="road-map-section">
               <div className="road-map-container container">
                 <div className="row">
@@ -242,7 +242,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="footer-section w-100">        
+            <div className="footer-section w-100 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.60s">        
               <div className="logo w-100">
                 <div className="container py-4 d-flex justify-content-between">
                   <div className="logo-part">

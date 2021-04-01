@@ -70,7 +70,7 @@ h5{
 
 .home {
     .hero-section {
-        height: calc( 100vh + 200px);
+        height: calc( 94vh + 0px);
         background-image: url(../assets/img/hero-back.png);
         background-size: cover;
         background-position: center;
@@ -168,7 +168,7 @@ h5{
         .section-title {
             // margin-top: -14rem;
             padding: 18px 0;
-            background: linear-gradient(to right, #1e3254, #1e3254, transparent 80%);
+            background: linear-gradient(to right, #1e3254, #1e3254, transparent 65%);
             margin-bottom: -6px;
             h3{
                 font-size: 28px;
@@ -235,13 +235,13 @@ h5{
 
         &.stable-coin{
             .question-card{
-                width: 80%;
+                max-width: 550px;
             }
         }
         .section-title {
             margin: 5rem 0;
             padding: 18px 0;
-            background: linear-gradient(to right, #1e3254, #1e3254, transparent 80%);
+            background: linear-gradient(to right, #1e3254, #1e3254, transparent 65%);
             h3{font-size: 28px;margin: 0;}
         }
         .question-container {
@@ -294,7 +294,7 @@ h5{
         .section-title {
             margin: 5rem 0;
             padding: 18px 0;
-            background: linear-gradient(to right, #fff, #fff, transparent 80%);
+            background: linear-gradient(to right, #fff, #fff, transparent 65%);
             color: transparent;
             h3{font-size: 28px;margin: 0;}
         }
@@ -304,7 +304,7 @@ h5{
             padding: 3rem;
             border-radius: 2rem;
             color: #151515;
-            width: 80%;
+            max-width: 550px;
             margin-left: auto;
             
             h5 {
@@ -394,7 +394,7 @@ h5{
         background-image: url(../assets/img/footer-back.png);
         background-repeat: no-repeat;
         background-size: 100% ;
-        background-position: top;
+        background-position: bottom;
         width: 100%;
         min-height: 98vh;
         display: flex;

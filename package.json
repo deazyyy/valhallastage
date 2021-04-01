@@ -39,10 +39,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
+  },
   "devDependencies": {
     "@types/react-router": "^5.1.13",
     "@types/react-router-dom": "^4.3.5"
   },
-  "resolutions": {"uncontrollable": "7.1.1" }
+  "resolutions": {
+    "uncontrollable": "7.1.1"
+  }
 }
