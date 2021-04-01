@@ -49,6 +49,7 @@ h5{
     font-weight: 500 !important;
     height: 40px;
     font-family: "Arial";    
+    min-width: 180px
 }
 .btn-brown{
     color: #edb800;
@@ -69,7 +70,7 @@ h5{
 
 .home {
     .hero-section {
-        height: 100vh;
+        height: calc( 100vh + 200px);
         background-image: url(../assets/img/hero-back.png);
         background-size: cover;
         background-position: center;
@@ -80,7 +81,7 @@ h5{
             height: 80%;
             h2{
                 font-weight: 500 !important;
-                font-size: 40px;
+                font-size: 3.5rem;
                 @media (max-width: 500px) {
                     font-size: 30px;
                 }
@@ -232,6 +233,11 @@ h5{
             padding:6rem 0 12rem ;
         }
 
+        &.stable-coin{
+            .question-card{
+                width: 80%;
+            }
+        }
         .section-title {
             margin: 5rem 0;
             padding: 18px 0;
@@ -250,7 +256,7 @@ h5{
                 }
             }
         }
-
+       
         .question-card {
             background: white;
             padding: 3rem;
@@ -292,12 +298,14 @@ h5{
             color: transparent;
             h3{font-size: 28px;margin: 0;}
         }
-
+        
         .question-card {
             background: white;
             padding: 3rem;
             border-radius: 2rem;
             color: #151515;
+            width: 80%;
+            margin-left: auto;
             
             h5 {
                 margin-bottom: 1.5rem;
@@ -385,10 +393,10 @@ h5{
     .footOuter{
         background-image: url(../assets/img/footer-back.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
+        background-size: 100% ;
+        background-position: top;
         width: 100%;
-        min-height: 90vh;
+        min-height: 98vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -400,6 +408,11 @@ h5{
         .contact-icons img{
             width: 22px;
             height: auto;
+        }
+    }
+    .footer-section{
+        img{
+            cursor: pointer;
         }
     }
 }

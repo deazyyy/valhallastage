@@ -30,7 +30,7 @@ const Home: React.FC = () => {
             </div>
             <div className="hero-section w-100">
               <div className="hero-container container">
-                <h2>Valhalla.finance is a semi closed-circuit defi application on the Binance Smart-Chain </h2>
+                <h2>Valhalla.finance is a defi application agregator on the Binance Smart-Chain </h2>
                 <div className="hero-buttons mt-4">
                   <button className="btn btn-primary mr-3 mt-3">Drakkar App <span>VALHA</span></button>
                   <button className="btn btn-primary mr-3 mt-3">Longhouse App</button>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
             
 
 
-            <div className="question-section">
+            <div className="question-section stable-coin">
               <div className="section-title">
                 <div className="container">
                   <h3>
@@ -250,8 +250,8 @@ const Home: React.FC = () => {
                     <p>The BSC Defi Dapp ecosystem</p>
                   </div>
                   <div className="contact-icons">
-                    <img src={TelegramIcon} alt="telegram" className="mr-4" />
-                    <img src={TwitterIcon} alt="twitter"/>
+                    <a href="#"><img src={TelegramIcon} alt="telegram" className="mr-4" /></a>
+                    <a href="#"><img src={TwitterIcon} alt="twitter"/></a>
                   </div>
                 </div>
               </div>
