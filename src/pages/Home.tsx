@@ -8,7 +8,7 @@ import ServiceImage2 from "../assets/img/service-image2.png";
 import TwitterIcon from "../assets/img/twitter-icon.png";
 import TelegramIcon from "../assets/img/telegram-icon.png";
 import AboutImage from "../assets/img/about-image.png";
-
+import {Link} from "react-router-dom";
 import CoinIcon1 from "../assets/img/coin-icon1.png";
 import CoinIcon2 from "../assets/img/coin-icon2.png";
 import CoinIcon3 from "../assets/img/coin-icon3.png";
@@ -32,11 +32,11 @@ const Home: React.FC = () => {
               <div className="hero-container container">
                 <h2>Valhalla.finance is a defi application agregator on the Binance Smart-Chain </h2>
                 <div className="hero-buttons mt-4">
-                  <button className="btn btn-primary mr-3 mt-3">Drakkar App <span>VALHA</span></button>
-                  <button className="btn btn-primary mr-3 mt-3">Longhouse App</button>
-                  <button className="btn btn-primary mr-3 mt-3">ValhallaSwap</button>
-                  <button className="btn btn-secondary mt-3">VALHA Presale</button><br/>
-                  <button className="btn btn-brown mt-3">Drakkar App <span>BNB</span></button>
+                  <button className="btn btn-primary mr-3 mt-3"><Link to="/dapp">Drakkar App <span>VALHA</span></Link></button>
+                  <button className="btn btn-primary mr-3 mt-3"><Link to="/coming-soon1">Longhouse App</Link></button>
+                  <button className="btn btn-primary mr-3 mt-3"><Link to="/coming-soon2">ValhallaSwap</Link></button>
+                  <button className="btn btn-secondary mt-3"><Link to="/detail">VALHA Presale</Link></button><br/>
+                  <button className="btn btn-brown mt-3"><Link to="/dapp-black">Drakkar App <span>BNB</span></Link></button>
                 </div>
               </div>
             </div>
