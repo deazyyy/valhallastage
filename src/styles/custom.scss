@@ -806,6 +806,15 @@ header.header {
         transform: translateY(-50%);
     }
 }
+.logo-part{
+    img {
+        height: 36px;
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        margin-bottom: 10px;
+    }
+}
 
 .progress {
     &.progress-warning {
