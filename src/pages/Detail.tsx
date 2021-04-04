@@ -32,9 +32,9 @@ const Dapp: React.FC = () => {
             </header>
             <main>
                 <div className="container">
-                    <section className="sell-v-cash-section transform-section v-cash-section">
+                    <section className="sell-v-cash-section transform-section v-cash-section detailcashsection">
                         <div className="d-flex align-items-center mb-2 flex-wrap">
-                            <p className="text-white w-100 w-md-50">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 BNB<strong>BNB</strong></p>
+                            <p className="text-white w-100 w-md-50">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
                             <div className="w-100 w-md-50">
                                 <p className="d-flex justify-content-between mb-0"><small>Seed phase. <span className="text-warning">1.5B VALHA.</span></small><small>950,000,000/<span className="text-warning">1,500,000,000 reserved.</span></small></p>
                                 <ProgressBar variant="warning" now={60} className="progress-warning" />
@@ -44,10 +44,10 @@ const Dapp: React.FC = () => {
                             <div className="form-group d-flex flex-md-row flex-column w-100 justify-content-between m-0">
                                 <div className="d-flex align-items-center flex-md-row flex-column w-100">
                                     <div className="amount-input-box">
-                                        <input type="text" className="amount-input" />
+                                        <input type="text" className="amount-input" placeholder="Enter amount" />
                                         <span className="font-weight-bold">BNB</span>
                                     </div>
-                                    <p className="text-white m-0 ml-2">Receive <strong>0.0000 V-Bonds</strong></p>
+                                    <p className="text-white m-0 ml-2">Receive <strong>0.0000 VALHA</strong></p>
                                 </div>
                                 <button className="btn btn-warning btn-block">RESERVE VALHA</button>
                             </div>
@@ -55,7 +55,7 @@ const Dapp: React.FC = () => {
                     </section>
                     <section className="transform-v-cash-section transform-section v-cash-section">
                         <div className="d-flex align-items-center mb-2 flex-wrap">
-                            <p className="text-white w-100 w-md-50">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 BNB<strong>BNB</strong></p>
+                            <p className="text-white w-100 w-md-50">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
                             <div className="w-100 w-md-50">
                                 <p className="d-flex justify-content-between mb-0"><small>Pre sale.<span className="text-info"> 3.5B VALHA.</span></small><small>850,000,000/<span className="text-info">3,500,000,000 reserved.</span></small></p>
                                 <ProgressBar variant="info" now={25} className="progress-info" />
@@ -70,7 +70,7 @@ const Dapp: React.FC = () => {
                                     </div>
                                     <p className="text-white m-0 ml-2">Receive <strong>0.0000 V-Bonds</strong></p>
                                 </div>
-                                <button className="btn btn-secondary btn-block">RESERVE VALHA</button>
+                                <button className="btn btn-secondary btn-block ">RESERVE VALHA</button>
                             </div>
                         </div>
                     </section>
@@ -78,7 +78,7 @@ const Dapp: React.FC = () => {
                         <p className="text-white">I’ve reserved and will be allowed to claim <small>(you will be allowed to claim you token once the first batch of liquidity is added (at 50% seed phase reserved))</small></p>
                         <div className="d-flex align-items-center flex-md-row flex-column w-100 v-cash-input">
                             <div className="display-4 font-weight-bold text-warning w-100">3,000,000 <span className="h4 font-weight-bold text-white">VALHA</span></div>
-                            <button className="btn btn-primary" disabled>CLAIM MY VALHA</button>
+                            <button className="btn btn-primary btn-db" disabled>CLAIM MY VALHA</button>
                         </div>
                     </section>
                 </div>

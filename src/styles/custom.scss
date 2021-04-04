@@ -23,12 +23,15 @@ $theme-colors: (
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
-body{
+html, body{
     width: 100% !important;
 }
 button:focus, select:focus, input:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+input::placeholder{
+    color: #fff;
 }
 button {
     font-weight: 500 !important;
@@ -46,8 +49,8 @@ h5{
 .btn{
     padding: 7px 26px;
     border-radius: 8px;
-    font-weight: 500 !important;
-    height: 40px;
+    font-weight: 800 !important;
+    height: auto;
     font-family: "Arial";    
     min-width: 180px
 }
@@ -58,8 +61,14 @@ h5{
 }
 .btn-warning {
     color: #212529;
-    background-color: #f0cf5b;
-    border-color: #f0cf5b;
+    background-color: transparent !important;
+    background: linear-gradient(to right,#b7962f, #f0cf5b) !important;
+    border: transparent;
+}
+.btn-db{
+    color: #2c3e5b !important;
+    background-color: #142543 !important;
+    border-color: #142543 !important;
 }
 .text-warning{
     color: #f0cf5b !important;
@@ -67,13 +76,20 @@ h5{
 .bg-warning{
     background-color: #f0cf5b !important;
 }
-
+.progress-bar.bg-warning{
+    background-color: transparent !important;
+    background: linear-gradient(to right,#b7962f, #f0cf5b) !important;
+}
+body{
+    font-weight: 500;
+}
 .home {
     .hero-section {
-        height: calc( 94vh + 0px);
+        height: calc( 96vh + 0px);
         background-image: url(../assets/img/hero-back.png);
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
+        // background-position-y: -30px;
         .hero-container {
             display: flex;
             flex-flow: column;
@@ -222,12 +238,12 @@ h5{
 
     .question-section {
         position: relative;
-        padding: 12rem 0;
+        padding: 17rem 0;
         width: 100%;
-        // background-image: url(../assets/img/question-back.png);
+        background-image: url(../assets/img/question-back.png);
         background-size: cover;
         background-position: bottom center;
-        background-color: #00000099;
+        // background-color: #00000099;
         // background-blend-mode: color;
         @media (max-width: 767px) {
             padding:6rem 0 12rem ;
@@ -241,7 +257,7 @@ h5{
         .section-title {
             margin: 5rem 0;
             padding: 18px 0;
-            background: linear-gradient(to right, #1e3254, #1e3254, transparent 65%);
+            background: linear-gradient(to right, rgba(30, 50, 84, 0.57), rgba(30, 50, 84, 0.57), transparent 65%);
             h3{font-size: 28px;margin: 0;}
         }
         .question-container {
@@ -294,8 +310,8 @@ h5{
         .section-title {
             margin: 5rem 0;
             padding: 18px 0;
-            background: linear-gradient(to right, #fff, #fff, transparent 65%);
-            color: transparent;
+            background: linear-gradient(to right, rgba(255,255,255,0.3), rgba(255,255,255,0.3), transparent 65%);
+            color: #fff;
             h3{font-size: 28px;margin: 0;}
         }
         
@@ -441,6 +457,17 @@ header.header {
         }
     }
 }
+.dapporg{
+    .transform-v-cash-section{
+        background-color: #142543 !important;
+    }
+   .logsecbg {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        height: 100%;
+    }
+}
 .dapp {
     main {
         padding: 2rem 0;
@@ -449,7 +476,7 @@ header.header {
         background-repeat: no-repeat;
         background-position: bottom;
         .container {
-            background: linear-gradient(#111d31, #142543);
+            background: linear-gradient(#111c2f, #1e3254);
             border-radius: 2rem;
             padding: 2rem;
         }
@@ -460,6 +487,9 @@ header.header {
             margin-bottom: 2rem;
             @media (max-width: 1024px) {
                 padding: 2rem 2.5rem;
+            }
+            @media (max-width: 500px) {
+                padding: 30px;
             }
             .btn{
                 max-width: 400px;
@@ -474,10 +504,12 @@ header.header {
             .amount-input-box {
                 display: flex;
                 align-items: center;
-                background: #FFFFFF33;
+                background: rgba(64,78,102,0.42);;
                 border-radius: 0.75rem;
-                padding: 0.25rem 1rem;
+                padding: 8px 1rem;
                 position: relative;
+                width: 100%;
+                max-width: 400px;
                 ::before{
                     position: absolute;
                     content: "";
@@ -489,6 +521,7 @@ header.header {
                     transform: translateY(-50%);
                 }
                 input {
+                    width: 100%;
                     background: transparent;
                     border: none;
                     color: white;
@@ -506,6 +539,7 @@ header.header {
                 border-radius: 2rem;
                 margin-bottom: 2rem;
                 overflow: hidden;
+                position: relative;
                 
                 .wallet-card-info {
                     padding-left: 3rem;
@@ -527,11 +561,16 @@ header.header {
 
                 .card-background {
                     position: absolute;
-                    opacity: 0.25;
-                    width: 90%;
+                    opacity: 1;
+                    height: 59%;
+                    width: auto !important;
                     top: -50%;
-                    right: -25%;
-                    transform: rotate(-45deg);
+                    right: 0%;
+                    // transform: rotate(-45deg);
+                }
+                .card-background{
+                    top: 0;
+                    width: 50%;
                 }
             }
         }
@@ -553,6 +592,9 @@ header.header {
             @media (max-width: 768px) {
                 padding: 2rem 2.5rem;
             }
+            @media (max-width: 500px) {
+                padding: 30px;
+            }
 
             .v-cash-diagram {
                 align-items: center;
@@ -561,8 +603,8 @@ header.header {
                     width: 65%;
                     align-items: center;
                     img {
-                        height: 3rem;
-                        width: auto;
+                        height: auto;
+                        width: 100%;
                     }
                     .arrow{
                         width: inherit;
@@ -631,7 +673,12 @@ header.header {
             background-color: #142543;
             border-radius: 2rem;
             padding: 2rem 4rem;
+            position: relative;
+            overflow: hidden;
             margin-bottom: 2rem;
+            @media (max-width: 500px) {
+                padding: 30px;
+            }
             .log-section-rw{
                 display: flex;
                 justify-content: space-between;
@@ -689,7 +736,7 @@ header.header {
             }
             .card-background {
                 position: absolute;
-                height: 50% !important;
+                height: 59% !important;
                 top: -0% !important;
                 right: -0% !important;
                 transform: rotate(0deg) !important;
@@ -739,15 +786,24 @@ header.header {
         background-position: top;
         background-color: #00000099;
         background-blend-mode: color;
+        
     main {
         padding: 2rem 0;
-       background-image: none;
-        
-    }
+        background-image: none;
+        .container{
+            background: #142543 !important;
+        }
+        }
+    .detailcashsection{
+        background-image: none !important;
+    }   
 }
 .logo {
     img {
-        height: 2.5rem;
+        height: 36px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -833,12 +889,42 @@ header.header {
     }
 }
 
+@media (max-width: 500px) {
+    .dapp main .wallet-section .wallet-card .card-background{
+        height: 40% !important;
+    }
+    .display-4{
+        font-size: 26px;
+    }
+    .dapp main .wallet-section .wallet-card .coin-value-bar img{
+        height: 32px;
+    }
+    main{
+        margin: 0 10px !important;
+        .container{
+            padding: 20px !important;
+        }
+    }
+    .btn-db{
+        margin-top: 12px;
+    }
+
+    
+}
+
 @media (max-width: 768px) {
     .section-title {
         h3{
             font-size: 22px !important;
         }
         margin-bottom: 3rem !important;
+    }
+    .logsecbg{
+        height: auto !important;
+        width: 60%;
+    }
+    .amount-input-box{
+        margin: 10px 0;
     }
     
 }

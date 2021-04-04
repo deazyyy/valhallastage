@@ -2,13 +2,15 @@ import React from "react";
 
 import Logo from "../assets/img/logo.png";
 import BondImage1 from "../assets/img/bond1.png";
-import BondImage2 from "../assets/img/bond2.png";
+import BondImage2 from "../assets/img/bond2b.png";
 import VCashCoin from "../assets/img/v-cash-coin.png";
 import CoinIcon from "../assets/img/coin-icon.png";
 import arrow from "../assets/img/arrow.png";
 import bondblk1 from "../assets/img/blkdp1.png";
 import bondblk2 from "../assets/img/blkdp2.png";
 import logbg from "../assets/img/logobg.png";
+import Bondl1 from "../assets/img/bondl1.png";
+import Bondl2 from "../assets/img/bondl2.png";
 
 const DappBlack: React.FC = () => {
     return (
@@ -46,7 +48,7 @@ const DappBlack: React.FC = () => {
                         <div className="form-group d-flex flex-md-row flex-column w-100 justify-content-between m-0">
                             <div className="d-flex align-items-center flex-md-row flex-column w-100 w-md-75">
                                 <div className="amount-input-box">
-                                    <input type="text" className="amount-input" />
+                                    <input type="text" className="amount-input" placeholder="Enter amount   " />
                                     <span className="font-weight-bold">BNB</span>
                                 </div>
                                 <p className="text-white m-0 ml-2">Receive <strong>0.0000 V-Bonds</strong></p>
@@ -120,12 +122,10 @@ const DappBlack: React.FC = () => {
                         </div>
                     </section>
                     <section className="sell-v-cash-section transform-section">                        
-                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 BNB<strong>BNB</strong></p>
+                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
                         <div className="v-cash-diagram d-flex">
                             <div className="diagram-part d-flex justify-content-between">
-                                <img src={VCashCoin} alt="" />
-                                <img src={arrow} alt="" className="arrow"/>
-                                <img src={CoinIcon} alt=""/>
+                                <img src={Bondl2} alt="" />
                             </div>
                             <button className="btn btn-warning">
                                 Sell V-Cash For BOB
@@ -133,15 +133,13 @@ const DappBlack: React.FC = () => {
                         </div>
                     </section>
                     <section className="transform-v-cash-section transform-section">                        
-                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 BNB<strong>BNB</strong></p>
+                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
                         <div className="v-cash-diagram d-flex">
                             <div className="diagram-part d-flex justify-content-between">
-                                <img src={VCashCoin} alt="" />
-                                <img src={arrow} alt="" className="arrow"/>
-                                <img src={BondImage1} alt="" width="60px" />
+                                <img src={Bondl1} alt="" />
                             </div>
                             <button className="btn btn-secondary">
-                                Sell V-Cash For BOB
+                            TRANSFORM V-CASH INTO V-BONDS
                             </button>
                         </div>
                     </section>
