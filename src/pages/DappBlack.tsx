@@ -128,12 +128,12 @@ const DappBlack: React.FC = () => {
                                 <img src={Bondl2} alt="" />
                             </div>
                             <button className="btn btn-warning">
-                                Sell V-Cash For BOB
+                                Sell V-Cash For BNB
                             </button>
                         </div>
                     </section>
                     <section className="transform-v-cash-section transform-section">                        
-                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
+                    <p className="text-white">Tramsform  my <strong>13 V-Cash</strong> into more <strong>V-Bonds</strong> and start earning more <strong>(1 V-Bond = +1 V-Cash)</strong></p>
                         <div className="v-cash-diagram d-flex">
                             <div className="diagram-part d-flex justify-content-between">
                                 <img src={Bondl1} alt="" />

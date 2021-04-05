@@ -9,7 +9,7 @@ import VCashCoin from "../assets/img/v-cash-coin.png";
 import CoinIcon from "../assets/img/coin-icon.png";
 import arrow from "../assets/img/arrow.png";
 import Bondl1 from "../assets/img/bondl1.png";
-import Bondl2 from "../assets/img/bondl2.png";
+import Bondl2 from "../assets/img/bondl2b.png";
 import logbg from "../assets/img/logobg.png";
 
 const Dapp: React.FC = () => {
@@ -22,7 +22,7 @@ const Dapp: React.FC = () => {
                     </div>
                     <div className="wallet-info d-flex flex-column flex-md-row justify-content-between align-items-end align-items-md-center">
                         <div className="wallet-info-item text-md-left text-right">
-                            <span>BNB IN WALLET</span>
+                            <span>VALHA IN WALLET</span>
                             <p className="font-weight-bold">3.23321</p>
                         </div>
                         <div className="wallet-info-item text-md-left text-right">
@@ -49,7 +49,7 @@ const Dapp: React.FC = () => {
                             <div className="d-flex align-items-center flex-md-row flex-column w-100 w-md-75">
                                 <div className="amount-input-box">
                                     <input type="text" className="amount-input" placeholder="Enter amount"/>
-                                    <span className="font-weight-bold">BNB</span>
+                                    <span className="font-weight-bold">VALHA</span>
                                 </div>
                                 <p className="text-white m-0 ml-2">Receive <strong>0.0000 V-Bonds</strong></p>
                             </div>
@@ -120,15 +120,15 @@ const Dapp: React.FC = () => {
                         </div>
                     </section>
                     <section className="sell-v-cash-section transform-section">                        
-                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>BNB</strong></p>
+                        <p className="text-white">Sell my <strong>13 V-Cash</strong>  and receive 0.432142 <strong>VALHA</strong></p>
                         <div className="v-cash-diagram d-flex ">
                             <div className="diagram-part d-flex justify-content-between">
                                 <img src={Bondl2} alt="" />
                                 {/* <img src={arrow} alt="" className="arrow"/>
                                 <img src={CoinIcon} alt=""/> */}
                             </div>
-                            <button className="btn btn-warning">
-                                Sell V-Cash For BNB
+                            <button className="btn btn-secondary">
+                                Sell V-Cash For VALHA
                             </button>
                         </div>
                     </section>

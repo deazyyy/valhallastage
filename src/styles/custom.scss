@@ -584,8 +584,8 @@ header.header {
             padding: 2rem 4rem;
             margin-bottom: 2rem;
             &.sell-v-cash-section {
-                background-color: #000000;
-                background-image: url(../assets/img/dappbg.png);
+                background-color: #142543 ;
+                // background-image: url(../assets/img/dappbg.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: right;
@@ -939,6 +939,7 @@ header.header {
     .amount-input-box{
         margin: 10px 0;
     }
+    .dapp main .v-cash-section .btn, .dapp main .transform-section .v-cash-diagram button, .dapp main .v-cash-section .amount-input-box{max-width: unset !important;}
     
 }
 @media (min-width: 768px) {
@@ -971,4 +972,8 @@ header.header {
     .container, .container-sm, .container-md, .container-lg, .container-xl{
         max-width: 1500px;
     }
+}
+
+@media (max-width: 1500px) {
+    .dapp main .v-cash-section .btn, .dapp main .transform-section .v-cash-diagram button, .dapp main .v-cash-section .amount-input-box{max-width: 300px;}
 }
