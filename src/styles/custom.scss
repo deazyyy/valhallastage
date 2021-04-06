@@ -715,7 +715,12 @@ header.header {
         .container {
             background: #FFFFFF17;
         }
-        
+        .transform-section {            
+            &.sell-v-cash-section {
+                background-color: #142543 ;
+                background-image: url(../assets/img/dappbg.png);
+            }
+        }
         .logsecbg{
             position: absolute;
             right: 30px;
